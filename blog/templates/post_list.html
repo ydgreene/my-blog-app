@@ -1,9 +1,14 @@
 <html>
-	<head>
-		<title>The Blog</title>
-	</head>
-	<body>
-		<p>Jess you mean!!</p>
-		<p> It works!</p>
-	</body>
+	<div>
+		<h1><a href="/">HAVE FUN JESS!!</a></h1>
+	</div>
+	
+	{% for post in posts %}
+		<div>
+			<p>published: {{ post.published_date }}</p>
+
+			<h2><a href="">{{ post.title }}</a></h2>
+		</div>
+
+	{% endfor %}
 </html>
