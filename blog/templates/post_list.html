@@ -1,4 +1,9 @@
-<h1>Post</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1>Feed</h1>
 
 <ul>
 {% for post in object_list %}
@@ -6,4 +11,7 @@
 		{{ post.body }}</li>
 {% endfor %}
 </ul>
+
+{% endblock %}
+
 
